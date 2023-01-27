@@ -2268,6 +2268,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\efa160\\codingFoundations\\dotnetProjects\\RestaurantRaterMVC\\Views\\Restaurant\\Index.cshtml",
+      "TargetPath": "Views\\Restaurant\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\efa160\\codingFoundations\\dotnetProjects\\RestaurantRaterMVC\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
