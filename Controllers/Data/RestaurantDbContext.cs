@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using RestaurantRaterMVC.Controllers.Data;
 
 namespace RestaurantRaterMVC.Controllers.Data
 {

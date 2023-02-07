@@ -12,6 +12,6 @@ namespace RestaurantRaterMVC.Controllers.Data
         public double FoodScore {get; set; }
         public double CleanlinessScore {get; set; }
         public double AtmosphereScore{get; set; }
-        public virtual Restaurant Restaurant {get; set; }
+        public virtual Restaurant Restaurant {get; set; }=null!;
     }
 }

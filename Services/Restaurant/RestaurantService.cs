@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using RestaurantRaterMVC.Controllers.Data;
 using RestaurantRaterMVC.Models;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace RestaurantRaterMVC.Services.Restaurant
@@ -24,8 +25,15 @@ namespace RestaurantRaterMVC.Services.Restaurant
                 Id = r.Id,
                 Name = r.Name,
                 Score = r.Score,
-            }).ToListAsync;
+            })await .ToListAsync;
             return restaurants; 
         }
+        Restaurant restaurant = new Restaurant()
+        {
+            Name = model.Name,
+            Location =model.Location,
+        };
+        _context.Restaurants.Add(restaurant);
+        return await _context.SaveChangesAsync() ==1; 
     }
 }
